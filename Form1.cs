@@ -34,8 +34,7 @@ namespace ExampleWinForms {
             this.output.Text += Debug.Dump(demoObject, new DumpOptions {
                 Return = true,
                 SourceLocation = true
-            });
-			this.output.Text += Environment.NewLine + Environment.NewLine;
+            }) + Environment.NewLine + Environment.NewLine;
 
 			Debug.Dump(demoObject);
 			Debug.Log(demoObject);
